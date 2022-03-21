@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="botStyles.css">
+   <script src="botClasses.js"></script>
+ </head>
+
+ <body>
+
+   <button onclick="button1Press()">Generate Face</button>
+   Symmetry: <input type="checkbox" id="checkbox1" onclick="symmetrize()">
+   <br>
+   <button onclick="shuffleFace()">Shuffle Face</button>
+   <button onclick="shuffleEyes()">Shuffle Eyes</button>
+   <button onclick="shuffleNose()">Shuffle Nose</button>
+   <button onclick="shuffleMouth()">Shuffle Mouth</button>
+   <button onclick="shuffleHair()">Shuffle Hair</button>
+
+   <br>
+   <span id = "container">
+     <canvas id="canvas"></canvas>
+     <canvas id="panelCanvas"></canvas>
+     <canvas id="editorCanvas" onmousemove = "mouseMove()" onmousedown="mouseDown()" onmouseup="mouseUp()"></canvas>
+   </span>
+
+   <script src="facebot.js"></script>
+
+
+
+ </body>
+
+</html>
